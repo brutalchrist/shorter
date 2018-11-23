@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { NgZorroAntdModule, NZ_I18N, es_ES } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 
@@ -31,15 +30,9 @@ registerLocaleData(es);
     FeaturesModule,
     PipesModule,
     FormsModule,
-    HttpClientModule,
-    NgZorroAntdModule
+    HttpClientModule
   ],
-  providers: [
-    {
-      provide: NZ_I18N,
-      useValue: es_ES
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 
